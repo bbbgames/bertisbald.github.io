@@ -1,0 +1,47 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: rgb(200,200,200);
+}
+
+.section{
+	width: 100%;
+	float: left;
+}
+
+.navigation{
+	position:absolute;
+	background: rgba(0,0,0,0.7);
+	height: 60px;
+}
+
+.navigation .left{ float: left; }
+.navigation .right{ float: right; }
+
+.navigation > * > *{
+	float: left;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navigation > * > * img {
+	height: 40px;
+	padding: 10px;
+	border:0px;
+}
+
+.navigation > * > * span{
+	padding: 30px 25px 30px 0;
+	line-height: 0px;
+}
+
+.navigation a:hover{ 
+	background: rgb(80, 80, 80); 
+	height: 60px;
+}
+
+@media(max-width: 1200px){
+	.navigation>*>*span{ display: none; }
+}
