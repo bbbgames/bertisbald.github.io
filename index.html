@@ -13,7 +13,7 @@
   <script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
   <script>
     $(document).ready(function(){
-      $.getJSON("https://api.twitch.tv/kraken/streams/Northernlion", function(channel) {
+      $.getJSON("https://api.twitch.tv/kraken/streams/Northernlion?client_id=p9omsvbo955h73cnejy0iw52ay6kgz", function(channel) {
 
           if (channel["stream"] == null) { 
             $("#twitch").text("Offline");
